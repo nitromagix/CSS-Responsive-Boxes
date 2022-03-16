@@ -1,0 +1,32 @@
+* {
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+   padding: 5px;
+}
+li {
+   display:inline-block;
+   list-style-type: none;
+}
+
+a {
+   display: inline-block;
+   color: darkslategrey;
+   text-decoration: none;
+   padding: .8em;
+   margin:.8em;
+   border: 1px solid #ccc;
+   box-shadow: 0px 0px 3px 1px #ddd;
+   border-radius: 3px;
+   font-weight: bold;
+   text-transform:capitalize;
+}
+
+a:hover {
+   /* text-decoration: underline; */
+   background-color:honeydew;
+   padding: .85em;
+   margin:.70em;
+   font-size: 1.01em;
+}
