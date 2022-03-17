@@ -3,8 +3,11 @@
 }
 
 ul {
+   display: inline-block;
    padding: 5px;
+   border: 1px solid #ccc;
 }
+
 li {
    display:inline-block;
    list-style-type: none;
