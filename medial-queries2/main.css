@@ -1,81 +1,100 @@
-
 :root {
-   --border: 2px solid grey;
+   --border: 1px solid grey;
 }
 
 body {
    background: papayawhip;
-  margin: 0;
-  /* padding:10px; */
-  border: var(--border);
-  text-align: center;
+   padding-bottom: 25px;
+   text-align: center;
 }
 
 .container {
    display: flex;
-   flex-direction: column;
-   justify-content:flex-start;
-
+   flex-direction: row;
+   flex-basis: 100%;
+   justify-content: space-between;
+   flex-wrap: wrap;
    height: 100vh;
 }
 
-.a, .b, .c, .d, .e, .f {
+.container div {
    border: var(--border);
-   margin: 20px 20px 0 20px;
-   flex-grow: 1;
-   flex-basis: 33%;
+}
+.a,
+.b,
+.c,
+.d,
+.e,
+.f {
+   border: var(--border);
 }
 
 .a {
-
+   flex: 100%;
+   height: 20vh;
 }
 
 .b {
-   flex-grow: 5 !important;
-   min-height: 40vh;
+   flex: 100%;
+   height: 40vh;
 }
 
 .c {
-
-   width: 20vw;
+   flex: 32%;
+   height: 20vh;
 }
 
 .d {
-   margin-left: unset;
-   margin-right: unset;
-
-   width: 20vw;
+   width: 32%;
+   height: 20vh;
 }
 
 .e {
-   display: inline-block;
-
-   width: 20vw;
+   flex: 32%;
+   height: 20vh;
 }
 
 .f {
-   margin-bottom: 20px;
-
+   flex: 100%;
+   height: 20vh;
 }
 
-@media (min-width:600px) {
-   .container {
-      flex-direction: row;
-      flex-wrap: wrap;
-   }
 
+@media only screen and (min-width:600px) {
+
+   .container {
+      /* flex-flow: column wrap; */
+   }
 
    .a {
-      width: 100vw;
+      width: 100%;
+      height: 32vh;
    }
-   
+
    .b {
-      margin-right: unset;
-      margin-bottom: 20px;
-      width: 60vw;
+      flex: 75%;
+      height: 32vh;
    }
-   
+
    .c {
-      width: 20vw;
+      flex: 25%;
+      height: 32vh;
    }
-}
+
+   .d {
+      flex: 25%;
+      height: 32vh;
+   }
+
+   .e {
+      flex: 25%;
+      height: 32vh;
+   }
+
+   .f {
+      flex-flow: column;
+      width: 24%;
+      height: 65vh;
+   }
+
+} 
