@@ -10,7 +10,7 @@ ul {
 
 li {
    display:inline-block;
-   list-style-type: none;
+   list-style-type:none;
 }
 
 a {
@@ -19,17 +19,19 @@ a {
    text-decoration: none;
    padding: .8em;
    margin:.8em;
-   border: 1px solid #ccc;
-   box-shadow: 0px 0px 3px 1px #ddd;
-   border-radius: 3px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   /* box-shadow: 0px 0px 3px 1px #ddd; */
+   box-shadow: 0px 0px 4px 0px rgba(33, 33, 33, 0.3);
+   border-radius: 1px;
    font-weight: bold;
    text-transform:capitalize;
 }
 
 a:hover {
    /* text-decoration: underline; */
+      border: 1px solid rgba(33, 33, 33, 0.3);
    background-color:honeydew;
-   padding: .85em;
+   /* padding: .87em;
    margin:.70em;
-   font-size: 1.01em;
+   font-size: 1.01em; */
 }
