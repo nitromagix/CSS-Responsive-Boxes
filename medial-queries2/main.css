@@ -23,12 +23,12 @@ body {
    flex-direction: row;
    flex-wrap: wrap;
    align-items: flex-start;
-   justify-content: space-evenly;
+   justify-content: space-between;
    height: 100vh;
 }
 
 .header {
-   height: 19vh;
+   height: 20vh;
 }
 
 .container div div {
@@ -40,10 +40,21 @@ body {
    flex-direction: row;
    flex-wrap: wrap;
    align-items: flex-start;
-   justify-content: space-evenly;
+   justify-content: space-between;
    vertical-align: top;
    flex: 100%;
-   height: 59vh;
+   height: 60vh;
+}
+
+.aside {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+   vertical-align: top;
+   flex: 100%;
+   height: 20vh;
 }
 
 .a,
@@ -52,20 +63,18 @@ body {
 .d,
 .e,
 .f {
-   margin: 15px 0 0 15px;
+   width: 100%;
+   margin:auto
 }
 
 .a {
    flex: 100%;
    height: 90%;
-   margin-right: 15px;
 }
 
 .b {
    flex: 100%;
    height: 67%;
-   margin-right: 15px;
-
 }
 
 .c,
@@ -73,14 +82,11 @@ body {
 .e {
    flex: 26%;
    height: 26%;
-   margin-right: 15px;
 }
 
 .f {
    flex: 100%;
    height: 90%;
-   margin-right: 15px;
-   margin-bottom: 30px;
 }
 
 .aside {
@@ -118,7 +124,7 @@ body {
    .c,
    .d,
    .e {
-      height: 48.7%;
+      height: 50%;
    }
 
    .f {
@@ -126,9 +132,15 @@ body {
 
    }
 
+   .main {
+      flex: 73%;
+      height: 66vh;
+
+   }
+
    .aside {
       flex: 23%;
-      height: 62.5%;
+      height: 66vh;
    }
 
 }

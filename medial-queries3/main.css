@@ -2,6 +2,11 @@
    --border: 1px solid grey;
 }
 
+/* *{
+   border: var(--border);
+}  */
+
+
 body {
    background: peachpuff;
    text-align: center;
@@ -19,7 +24,8 @@ body {
    flex-direction: row;
    flex-wrap: wrap;
    align-items: flex-start;
-   justify-content: space-evenly;
+   justify-content: space-between;
+   vertical-align: top;
    height: 100vh;
 }
 
@@ -36,13 +42,19 @@ body {
    flex-direction: row;
    flex-wrap: wrap;
    align-items: flex-start;
-   justify-content: space-evenly;
+   justify-content: space-between;
    vertical-align: top;
    flex: 100%;
    height: 39vh;
 }
 
 .aside {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+   vertical-align: top;
    flex: 100%;
    height: 39vh;
 }
@@ -55,13 +67,19 @@ body {
 .f,
 .g,
 .h {
-   margin: 15px 0 0 15px;
+   width: 100%;
+   margin:auto
+}
+
+.d,
+.g {
+
 }
 
 .a {
    flex: 100%;
    height: 90%;
-   margin-right: 15px;
+
 }
 
 .b,
@@ -70,40 +88,34 @@ body {
 .e,
 .f,
 .g {
-   flex: 26%;
+   width: 29%;
    height: 41%;
-   margin-right: 15px;
+
+   min-width: none;
 }
 
 .h {
    flex: 100%;
    height: 90%;
-   margin-right: 15px;
-   margin-bottom: 15px;
+
 }
 
 @media only screen and (min-width:600px) {
 
    .header {
-      height: 33vh;
+      height: 32vh;
 
    }
 
    .main {
       flex: 73%;
-      height: 65vh;
+      height: 66vh;
 
-   }
-
-   .e,
-   .f,
-   .g {
-      margin-bottom: 15px;
    }
 
    .aside {
       flex: 23%;
-      height: 65vh;
+      height: 66vh;
    }
 
 }
