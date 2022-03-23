@@ -69,55 +69,50 @@ body {
 
 .a {
    flex: 100%;
-   height: 90%;
+   height: 100%;
 }
 
 .b {
    flex: 100%;
-   height: 67%;
+   height: 66%;
 }
 
 .c,
 .d,
 .e {
    flex: 26%;
-   height: 26%;
+   height: 33%;
 }
 
 .f {
    flex: 100%;
-   height: 90%;
+   height: 100%;
 }
-
-.aside {
-   flex: 100%;
-   height: 19vh;
-}
-
 
 @media only screen and (min-width:600px) {
 
    .header {
-      height: 32%;
+      height: 33vh;
 
    }
 
    .main {
       flex: 73%;
-      height: 62.5%;
+      height: 67vh;
 
    }
 
-   .a {
-      height: 96%;
+   .aside {
+      height: 67vh;
    }
+
 
    .c,
    .d,
    .e,
    .aside {
       flex: 23%;
-      margin-bottom: 30px;
+
    }
 
    .b,
@@ -132,15 +127,5 @@ body {
 
    }
 
-   .main {
-      flex: 73%;
-      height: 66vh;
-
-   }
-
-   .aside {
-      flex: 23%;
-      height: 66vh;
-   }
 
 }
