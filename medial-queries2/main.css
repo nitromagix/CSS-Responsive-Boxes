@@ -8,7 +8,6 @@
 
 body {
    background: papayawhip;
-   padding: 10px 10px 20px 10px;
    text-align: center;
    margin:0;
    padding:0;
@@ -19,11 +18,12 @@ body {
 }
 
 .container {
+   flex: 1 1 1;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    align-items: flex-start;
-   justify-content: space-around;
+   justify-content: space-evenly;
    height: 100vh;
 }
 
@@ -32,59 +32,65 @@ body {
 }
 
 .main {
+   flex: 1 1 1;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    align-items: flex-start;
-   justify-content: space-between;
+   justify-content: space-evenly;
+   vertical-align: top;
+}
+
+.header {
+   height: 19vh;
 }
 
 .main {
-   flex:100%
+   flex:100%;
+   height:59vh;
 }
 
 .aside {
-   flex:100%
+   flex:100%;
+   height: 19vh;
 }
 
 .a, .b, .c, .d, .e, .f {
-   /* margin:20px; */
-   margin: 15px
+   margin: 15px 0 0 15px;
 }
 
 .a {
    flex: 100%;
-   height: 17vh;
+   height: 90%;
+   margin-right: 15px;
 }
 
 .b {
    flex: 100%;
-   height: 35vh;
-   margin-top: unset;
+   height: 67%;
+   margin-right: 15px;
+
 }
 
-.c, .d {
-   margin-right: unset;
-}
 .c, .d, .e {
-   flex: 28%;
-   height: 17vh;
-   margin-top: unset;
+   flex: 26%;
+   height: 26%;
+   margin-right: 15px;
 }
 
 .f {
    flex: 100%;
-   height: 17vh;
-   margin-top: unset;
+   height: 90%;
+   margin-right: 15px;
+   margin-bottom: 30px;
 }
 
 
 @media only screen and (min-width:600px) {
 
    .container {
-      flex: 1 1 1;
       height: 100vh;
-      justify-content:space-between;
+      justify-content:space-evenly;
       align-items:flex-start; 
 
    }
@@ -94,36 +100,37 @@ body {
    }
 
    .header {
+      height: 32%;
 
    }
 
    .main {
       flex: 73%;
+      height: 62.5%;
+
    }
 
    .aside {
-      flex: 23%
+      flex: 23%;
+      height: 62.5%;
    }
 
-   .a, .b {
-      height: 30vh;
-   }
-
-   .b, .e  {
-      margin-right: unset;
+   .a {
+      height: 96%;
    }
 
    .c, .d, .e, .aside {
-      flex: 23%
+      flex: 23%;
+      margin-bottom: 30px;
    }
 
-   .a, .b, .c, .d, .e {
-      height: 31vh;
+  .b, .c, .d, .e {
+      height: 48.7%;
    }
 
    .f {
-      height:63vh;
-      margin-top: unset
+      height:100%;
+
    } 
 
 
