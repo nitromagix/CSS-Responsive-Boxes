@@ -2,108 +2,129 @@
    --border: 1px solid grey;
 }
 
+* {
+   /* border: var(--border); */
+}
+
 body {
    background: papayawhip;
-   padding-bottom: 25px;
+   padding: 10px 10px 20px 10px;
    text-align: center;
+   margin:0;
+   padding:0;
+}
+
+.header {
+   flex:100%;
 }
 
 .container {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   flex: 0 1 auto;
+   align-items: flex-start;
+   justify-content: space-around;
    height: 100vh;
 }
 
-.container>div {
+.container div div {
    border: var(--border);
+}
+
+.main {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+.main {
+   flex:100%
+}
+
+.aside {
+   flex:100%
+}
+
+.a, .b, .c, .d, .e, .f {
+   /* margin:20px; */
+   margin: 15px
 }
 
 .a {
    flex: 100%;
-   height: 20vh;
+   height: 17vh;
 }
 
 .b {
    flex: 100%;
-   height: 40vh;
+   height: 35vh;
+   margin-top: unset;
 }
 
-.c {
-   flex: 32%;
-   height: 20vh;
+.c, .d {
+   margin-right: unset;
 }
-
-.d {
-   flex: 32%;
-   height: 20vh;
-}
-
-.e {
-   flex: 32%;
-   height: 20vh;
+.c, .d, .e {
+   flex: 28%;
+   height: 17vh;
+   margin-top: unset;
 }
 
 .f {
    flex: 100%;
-   height: 20vh;
+   height: 17vh;
+   margin-top: unset;
 }
 
 
 @media only screen and (min-width:600px) {
 
    .container {
-      /* display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; */
       flex: 1 1 1;
       height: 100vh;
-      /* justify-content: baseline;
-      align-items:flex-end; */
+      justify-content:space-between;
+      align-items:flex-start; 
 
    }
-   
+
    .container>div {
-      border: var(--border);
-      height: 32vh;
+
    }
-   
-   .a {
-      flex: unset;
-      width: 99%;
-      order: 1;
+
+   .header {
+
    }
-   
-   .b {
-      flex: unset;
-      width: 74%;
-      order: 2;
+
+   .main {
+      flex: 73%;
    }
-   
-   .c {
-      flex: unset;
-      width: 24.6%;
-      order: 4;
+
+   .aside {
+      flex: 23%
    }
-   
-   .d {
-      flex: unset;
-      width: 24.6%;
-      order: 5;
+
+   .a, .b {
+      height: 30vh;
    }
-   
-   .e {
-      flex: unset;
-      width: 24.6%;
-      order: 6;
+
+   .b, .e  {
+      margin-right: unset;
    }
-   
+
+   .c, .d, .e, .aside {
+      flex: 23%
+   }
+
+   .a, .b, .c, .d, .e {
+      height: 31vh;
+   }
+
    .f {
-      flex: unset;
-      width: 24.8%;
-      /* min-height: 66vh; */
-      order: 2;
-   }
- 
-} 
+      height:63vh;
+      margin-top: unset
+   } 
+
+
+}
