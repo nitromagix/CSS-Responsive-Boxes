@@ -1,10 +1,3 @@
-:root {
-   --border: 1px solid grey;
-}
-
-/* * {
-   border: var(--border);
-} */
 
 body {
    background: papayawhip;
@@ -13,105 +6,75 @@ body {
    padding: 0;
 }
 
-.header {
-   flex: 100%;
-}
-
 .container {
-   flex: 1 1 1;
    display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-items: flex-start;
-   justify-content: space-between;
-   height: 100vh;
-}
-
-.header {
-   height: 20vh;
-}
-
-.container div div {
-   border: var(--border);
+   min-height: 100vh;
+   flex-direction: column;
 }
 
 .main {
-   display: flex;
+    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    align-items: flex-start;
-   justify-content: space-between;
-   vertical-align: top;
-   flex: 100%;
-   height: 60vh;
+   justify-content:space-between;
+   min-height: 60vh;
 }
 
-.aside {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-items: flex-start;
-   justify-content: space-between;
-   vertical-align: top;
-   flex: 100%;
+
+
+.a {
+   background: cadetblue;
    height: 20vh;
 }
 
-.a,
-.b,
-.c,
-.d,
-.e,
-.f {
-   width: 100%;
-   margin:auto
-}
-
-.a {
-   flex: 100%;
-   height: 100%;
-}
-
 .b {
-   flex: 100%;
-   height: 66%;
+   background: gainsboro;
+   height: 40vh;
+   width: 100%;
+}
+
+.c {
+   background: honeydew
+}
+
+.d {
+   background: lavender;
+}
+
+.e {
+   background: paleturquoise;
 }
 
 .c,
 .d,
 .e {
-   flex: 26%;
-   height: 33%;
+   height: 20vh;
+   width: 33.3%;
 }
 
 .f {
-   flex: 100%;
-   height: 100%;
+   background: mediumaquamarine;
+   height: 20vh;
 }
 
 @media only screen and (min-width:600px) {
 
-   .header {
-      height: 33vh;
+   .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
 
+   .a {
+      height: 33.3vh;
+      width: 100%;
+      margin:auto
    }
 
    .main {
-      flex: 73%;
+      width: 75%;
       height: 67vh;
-
-   }
-
-   .aside {
-      height: 67vh;
-   }
-
-
-   .c,
-   .d,
-   .e,
-   .aside {
-      flex: 23%;
 
    }
 
@@ -122,9 +85,13 @@ body {
       height: 50%;
    }
 
-   .f {
-      height: 100%;
+   .b {
+      width: 100%;
+   }
 
+   .f {
+      width: 25%;
+      height: 67vh;
    }
 
 
