@@ -78,21 +78,15 @@ body {
       flex-wrap: wrap;
    }
 
-   .a {
-      height: 33.3vh;
-      width: 100%;
-      margin: auto
-   }
-
    .main {
       width: 75%;
       height: 67vh;
 
    }
 
-   .h {
-      width: 25%;
-      height: 67vh;
+   .a {
+      height: 33.3vh;
+      width: 100%;
    }
 
    .b,
@@ -102,5 +96,10 @@ body {
    .f,
    .g {   
       height: 50%;
+   }
+
+   .h {
+      width: 25%;
+      height: 67vh;
    }
 }
